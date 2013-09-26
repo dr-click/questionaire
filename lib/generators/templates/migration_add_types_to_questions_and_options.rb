@@ -1,4 +1,4 @@
-class AddTypesToQuestionsAndOptions < ActiveRecord::Migration
+class AddTypesToSurveyQuestionsAndSurveyOptions < ActiveRecord::Migration
   def change
     #Survey Questions table
     add_column :survey_questions, :questions_type_id, :integer
