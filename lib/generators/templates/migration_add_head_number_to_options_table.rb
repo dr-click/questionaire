@@ -1,4 +1,4 @@
-class AddHeadNumberToOptionsTable < ActiveRecord::Migration
+class AddHeadNumberToSurveyOptionsTable < ActiveRecord::Migration
   def change
     #Survey Options table
     add_column :survey_options, :head_number, :string
