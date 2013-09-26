@@ -1,4 +1,4 @@
-class CreatePredefinedValuesTable < ActiveRecord::Migration
+class CreateSurveyPredefinedValuesTable < ActiveRecord::Migration
   def change
     create_table :survey_predefined_values do |t|
       t.string  :head_number
