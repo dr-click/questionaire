@@ -1,4 +1,4 @@
-class CreateSections < ActiveRecord::Migration
+class CreateSurveySections < ActiveRecord::Migration
   def self.up
     create_table :survey_sections do |t|
       t.string  :head_number
