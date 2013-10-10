@@ -50,6 +50,10 @@ class Survey::Survey < ActiveRecord::Base
     I18n.locale == I18n.default_locale ? super : locale_description || super
   end
   
+  def to_param
+    "#{id}-#{name}".parameterize
+  end
+  
   #######
   private
   #######
