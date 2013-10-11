@@ -8,7 +8,7 @@ class Survey::Survey < ActiveRecord::Base
   
   #rails 3 attr_accessible support
   if Rails::VERSION::MAJOR < 4
-    attr_accessible :name, :description, :finished, :active, :sections_attributes, :attempts_number, :locale_name, :locale_description, :terms_conditions
+    attr_accessible :name, :description, :finished, :active, :sections_attributes, :attempts_number, :locale_name, :locale_description, :agreement
   end
   
   accepts_nested_attributes_for :sections,
