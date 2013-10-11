@@ -1,4 +1,4 @@
-class AddTermsConditions < ActiveRecord::Migration
+class AddAgreement < ActiveRecord::Migration
   def change
     #Survey Surveys table
     add_column :survey_surveys, :agreement, :text
