@@ -9,7 +9,7 @@ module Survey
         migration_files = [{new_file_name: "create_survey", origin_file_name: "migration"},
                            {new_file_name: "create_survey_sections", origin_file_name: "migration_section"},
                            {new_file_name: "update_survey_tables", origin_file_name: "migration_update_survey_tables"},
-                           {new_file_name: "add_agreement_to_survey_surveys_table", origin_file_name: "migration_add_agreement"},
+                           {new_file_name: "add_agreement", origin_file_name: "migration_add_agreement"},
                            {new_file_name: "add_types_to_survey_questions_and_survey_options", origin_file_name: "migration_add_types_to_questions_and_options"},
                            {new_file_name: "add_head_number_to_survey_options_table", origin_file_name: "migration_add_head_number_to_options_table"},
                            {new_file_name: "create_survey_predefined_values_table", origin_file_name: "migration_create_predefined_values_table"}
