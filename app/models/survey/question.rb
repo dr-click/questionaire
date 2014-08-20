@@ -8,7 +8,7 @@ class Survey::Question < ActiveRecord::Base
   
   #rails 3 attr_accessible support
   if Rails::VERSION::MAJOR < 4
-    attr_accessible :options_attributes, :predefined_values_attributes, :text, :section_id, :head_number, :description, :locale_text, :locale_head_number, :locale_description, :questions_type_id
+    attr_accessible :options_attributes, :predefined_values_attributes, :text, :section_id, :head_number, :description, :locale_text, :locale_head_number, :locale_description, :questions_type_id, :type_id
   end
   
   accepts_nested_attributes_for :options,
