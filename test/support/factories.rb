@@ -1,4 +1,4 @@
-# Factories
+ # Factories
 
 # Create a Survey::Survey
 def create_survey(opts = {})
@@ -125,4 +125,8 @@ end
 # Dummy Model from Dummy Application
 def create_user
   User.create(:name => Faker::Name.name)
+end
+
+def create_lesson
+  Lesson.create(name: Faker::Company.catch_phrase)
 end

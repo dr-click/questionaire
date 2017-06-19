@@ -113,6 +113,25 @@ class ContestsController < ApplicationController
 end
 ```
 
+## Survey Associations
+To add a survey to a particular model (model has_many :surveys), use the `has_many_surveys` helper
+```ruby
+class Lesson < ActiveRecord::Base
+  has_many_surveys
+
+  #... (your code) ...
+end
+```
+This will dynamically add the association to the survey model. However, you will need to generate a migration in order to add the foreign key to the `survey_surveys` table like so:
+```ruby
+class AddLessonIdToSurveySurveys < ActiveRecord::Migration
+  def change
+    add_column :survey_surveys, :lesson_id, :integer
+  end
+end
+```
+
+
 ## Survey inside your Views
 
 ### Controlling Survey avaliability per participant
@@ -198,6 +217,7 @@ Afterwards if you want to generate more routes, you can using the command:
 ```sh
 rails generate survey routes namespace:admin
 ```
+
 
 ## How to use it
 Every user has a collection of attempts for each survey that he respond to. Is up to you to

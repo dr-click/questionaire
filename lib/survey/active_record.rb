@@ -10,6 +10,14 @@ module Survey
           self.survey_attempts.where(:survey_id => survey.id)
         end
       end
+
+      def has_many_surveys
+        has_many :surveys, class_name: ::Survey::Survey
+        class_name = self
+        ::Survey::Survey.class_eval do
+          belongs_to class_name.to_s.underscore.to_sym
+        end
+      end
     end
   end
 end

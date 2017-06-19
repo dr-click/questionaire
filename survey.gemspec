@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.summary     = %Q{Questionnaire is a user oriented tool that brings surveys into Rails applications.}
   s.description = %Q{A rails gem to enable surveys in your application as easy as possible}
   s.files       = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.md"]
-  s.authors     = "Dr-Click"
-  s.email       = "ragab.mostafa@gmail.com"
-  s.homepage    = "https://github.com/dr-click/Questionnaire"
+  s.authors     = "Clearfunction"
+  s.email       = "keith@clearfunction.com"
+  s.homepage    = "https://github.com/clearfunction/questionnaire"
   s.licenses    = "MIT"
   s.require_paths = %w(lib)
 

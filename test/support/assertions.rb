@@ -1,7 +1,6 @@
 require 'active_support/test_case'
 
 class ActiveSupport::TestCase
-
   def should_be_true(assertion)
     assert assertion
   end
@@ -23,7 +22,7 @@ class ActiveSupport::TestCase
   end
 
   def assert_not_nil(assertion)
-    should_be_true assertion != nil
+    should_be_true !assertion.nil?
   end
 
   def should_be_persisted(assertion)
@@ -35,5 +34,4 @@ class ActiveSupport::TestCase
     should_be_true   assertion.new_record?
     should_be_false  assertion.valid?
   end
-
 end
